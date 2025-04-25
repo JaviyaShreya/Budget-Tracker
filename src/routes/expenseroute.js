@@ -4,7 +4,7 @@ const { addExpense, getAllExpenses, deleteExpense } = require('../controllers/ex
 const { verifyToken } = require('../middleware/jwt');
 
 router.post('/expenses', verifyToken, addExpense);
-router.get('/expenses', verifyToken, getAllExpenses);
-router.delete('/expenses/:id', verifyToken, deleteExpense);
+router.get('/expenses/:userId', verifyToken, getAllExpenses);
+router.delete('/expenses/:userId', verifyToken, deleteExpense);
 
 module.exports = router;

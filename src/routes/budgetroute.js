@@ -5,6 +5,6 @@ const { verifyToken } = require('../middleware/jwt.js');
 
  
 router.post('/budget', verifyToken, addBudget);
-router.get('/budget', verifyToken, getBudget);
+router.get('/budget/:userId', verifyToken, getBudget);
  
 module.exports = router;

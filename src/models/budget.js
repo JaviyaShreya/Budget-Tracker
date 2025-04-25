@@ -19,11 +19,11 @@ const budgetSchema = new mongoose.Schema({
     nWeeklyLimit: {
         type: Number,
         default: 0,
-    },
+    }
 },{
     timestamps:{
-        dCreatedAt: 'dCreatedAt', 
-        dUdatedAt: 'dUpdatedAt'
+        createdAt: 'dCreatedAt', 
+        updatedAt: 'dUpdatedAt'
     }
 });
  
